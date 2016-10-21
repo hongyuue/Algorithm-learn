@@ -71,7 +71,7 @@ public class Test2{
 		return Math.log(n) + Ln(n -1);
 	}
 
-	public static void tables(String[] args)
+	public static void tables()
 	{
 		int L = 100;
 		String[] a = new String[L];
@@ -84,10 +84,11 @@ public class Test2{
 				else if(j == 2) c[i] = StdIn.readInt();
 			}
 
-		for (int m = 0; m < i; m++) {
+		for (int m = 0; m < 3; m++) {
 			StdOut.printf("%s ",a[m]);
 			StdOut.printf("%d ",b[m]);
-			StdOut.printf("%d\n",c[m]);
+			StdOut.printf("%d ",c[m]);
+			StdOut.printf("%.3f\n", (1.0 * b[m]) / (1.0 * c[m]) );
 		}
 		
 	}
